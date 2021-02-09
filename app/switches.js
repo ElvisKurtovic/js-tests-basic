@@ -7,6 +7,57 @@
     // output: 7
 
 function daysPosition(day, offset) {
+    switch (day.toLowerCase()) {
+        case "sunday": 
+        if (offset == true) { return 7
+            
+        } else{
+            return 1
+        }
+            
+            break;
+        case "saturday":
+        if (offset == true) { return 6
+            }
+            else{
+                return 7
+            }
+        case "friday":
+        if (offset == true) { return 5
+            
+        }
+            else{
+                return 6
+            }
+        case "thursday":
+        if (offset == true) { return 4
+            
+        } else { return 5
+            
+        }
+        case "wednesday":
+        if (offset == true) { return 3
+            
+        } else { return 4
+            
+        }
+        case "tuesday":
+        if (offset == true) { return 2
+            
+        } else { return 3
+            
+        }
+        case "monday":
+        if (offset == true) { return 1
+            
+        } else { return 2
+            
+        }
+    
+        default:
+            return "That's not a day of the week"
+            break;
+    }
 
 }
 
